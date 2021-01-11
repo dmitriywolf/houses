@@ -1,0 +1,38 @@
+.materials__wrapper {
+  background-color: $theme-color;
+
+  .section__title {
+    max-width: 486px;
+    margin: 0 auto;
+    color: #ffffff;
+  }
+}
+
+.materials__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.materials__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 23.08%;
+}
+
+@media (max-width: 768px) {
+  .materials__item {
+    width: 49%;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .materials__item {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+}

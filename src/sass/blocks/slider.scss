@@ -1,0 +1,200 @@
+.slider__arrow {
+  transition: 0.3s linear;
+
+  &:hover {
+    cursor: pointer;
+    fill: $hover-color;
+  }
+
+  &:active {
+    fill: #0d3f57;
+    transform: scale(1.2);
+  }
+
+}
+
+
+//Projects Slider
+.projects {
+
+  /*Slick Arrows */
+  .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    width: 12px;
+    height: 20px;
+    padding: 0;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  .slick-prev {
+    left: 40%;
+    background: url("../img/arrow-left.png") no-repeat;
+  }
+
+  .slick-next {
+    right: 40%;
+    background: url("../img/arrow-right.png") no-repeat;
+  }
+
+
+  /*Slick Dots*/
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    margin: 60px auto 0;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      margin: 0 10px;
+      font-size: 0;
+      border: 1px solid $theme-color;
+      border-radius: 50%;
+      background-color: transparent;
+      outline: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .slick-active button {
+      border-width: 3px;
+    }
+  }
+
+
+}
+
+/*Design Slider*/
+.design {
+
+  /*Slick Arrows */
+  .slick-arrow {
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+
+    font-size: 0;
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    z-index: 3;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+    background-image: url("../img/arrow-left.png");
+  }
+
+  .slick-next {
+    right: 0;
+    background-image: url("../img/arrow-right.png");
+  }
+
+
+}
+
+
+@media (max-width: 1024px) {
+  //Projects Slider
+  .projects {
+    /*Slick Arrow*/
+    .slick-prev {
+      left: 40%;
+    }
+
+    .slick-next {
+      right: 40%;
+    }
+
+    /*Slick Dots*/
+    .slick-dots {
+      height: 20px;
+      margin: 45px auto 0;
+
+      button {
+        width: 16px;
+        height: 16px;
+        margin: 0 5px;
+      }
+
+      .slick-active button {
+        border-width: 2px;
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  //Projects Slider
+  .projects {
+    /*Slick Arrow*/
+    .slick-prev {
+      left: 32%;
+    }
+
+    .slick-next {
+      right: 32%;
+    }
+
+    /*Slick Dots*/
+    .slick-dots {
+      margin: 40px auto 0;
+    }
+  }
+
+  /*Design Slider*/
+  .design {
+    /*Slick Arrows */
+    .slick-arrow {
+      top: calc(50% - 15px);
+      width: 30px;
+      height: 30px;
+
+    }
+  }
+
+}
+
+@media (max-width: 420px) {
+  //Projects Slider
+  .projects {
+    /*Slick Arrow*/
+    .slick-prev {
+      left: 25%;
+    }
+
+    .slick-next {
+      right: 25%;
+    }
+
+  }
+
+}

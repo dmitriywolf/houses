@@ -1,0 +1,170 @@
+.consultation__inner {
+  padding: 65px 200px 65px 100px;
+}
+
+.consultation__title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.consultation-text {
+  padding: 36px 0 46px;
+}
+
+.consultation__form {
+  display: flex;
+  justify-content: space-between;
+
+  .consultation__label,
+  .consultation__button {
+    width: 31.03%;
+  }
+
+  .consultation__input {
+    line-height: 4.46;
+  }
+}
+
+.consultation__phone {
+  padding-top: 48px;
+
+  a {
+    color: $text-color;
+    transition: 0.4s linear;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .consultation__inner {
+    padding: 50px 40px 60px;
+
+  }
+
+  .consultation__title {
+    font-size: 20px;
+  }
+
+  .consultation-text {
+    padding: 30px 0 40px;
+  }
+
+  .consultation__form {
+    padding-right: 40px;
+
+    .consultation__label,
+    .consultation__button {
+      width: 31.03%;
+    }
+
+    .consultation__input {
+      line-height: 4.3;
+    }
+  }
+
+  .consultation__phone {
+    padding-top: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .consultation__inner {
+    padding: 35px 35px 40px;
+
+  }
+
+  .consultation__title {
+    font-size: 17px;
+  }
+
+  .consultation-text {
+    padding: 25px 0 30px;
+  }
+
+  .consultation__form {
+    padding-right: 0;
+
+    .consultation__label,
+    .consultation__button {
+      width: 31.03%;
+    }
+
+    .consultation__input {
+      line-height: 3.6;
+    }
+
+    .consultation__button {
+      font-size: 12px;
+    }
+  }
+
+  .consultation__phone {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .consultation__inner {
+    padding: 25px 20px 30px;
+  }
+
+  .consultation__title {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .consultation-text {
+    padding: 25px 0 30px;
+    text-align: center;
+  }
+
+  .consultation__form {
+    flex-wrap: wrap;
+
+    .consultation__label {
+      width: 49%;
+      margin-bottom: 15px;
+    }
+
+    .consultation__button {
+      width: 49%;
+      margin: 0 auto;
+      height: 45px;
+    }
+  }
+
+  .consultation__phone {
+    padding-top: 25px;
+    text-align: center;
+
+  }
+}
+
+@media (max-width: 420px) {
+  .consultation__inner {
+    padding: 20px 10px 25px;
+  }
+
+  .consultation-text {
+    padding: 20px 0;
+  }
+
+  .consultation__form {
+    .consultation__label {
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto 15px;
+    }
+
+    .consultation__button {
+      width: 100%;
+      max-width: 340px;
+    }
+  }
+
+}

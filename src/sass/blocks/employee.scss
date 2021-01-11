@@ -1,0 +1,176 @@
+.employee .section__title {
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+.employee__inner {
+  display: flex;
+}
+
+.employee__img-wrapper {
+  position: relative;
+  padding: 0 100px;
+  background-image: url(../img/bg-employee.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &:hover .employee__mask {
+    display: none;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.employee__mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100px;
+  right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.employee__play {
+  position: absolute;
+
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  fill: #ffffff;
+  z-index: 3;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.employee__description {
+  padding-left: 30px;
+}
+
+.employee__name {
+  padding-top: 28px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.employee__position {
+  max-width: 200px;
+  padding-top: 24px;
+  font-size: 16px;
+}
+
+.employee__contacts {
+  max-width: 225px;
+  padding-top: 75px;
+}
+
+.employee__link {
+  display: inline-block;
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: $text-color;
+  transition: 0.4s linear;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@media (max-width: 1024px) {
+  .employee__inner {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .employee__img-wrapper {
+    padding: 0;
+    background-image: none;
+  }
+
+  .employee__mask {
+    left: 0;
+    width: 100%;
+  }
+
+  .employee__name {
+    font-size: 19px;
+  }
+
+  .employee__position {
+    font-size: 16px;
+  }
+
+  .employee__link {
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .employee__img-wrapper {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .employee__name {
+    padding-top: 0;
+    font-size: 17px;
+  }
+
+  .employee__position {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .employee__contacts {
+    padding-top: 30px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .employee__link {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .employee__inner {
+    flex-direction: column;
+  }
+
+  .employee__img-wrapper {
+    max-width: 400px;
+    margin-bottom: 15px;
+  }
+
+  .employee__description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .employee__position {
+    max-width: 100%;
+  }
+
+  .employee__contacts {
+    max-width: 100%;
+    padding-top: 15px;
+  }
+
+  .employee__link {
+    padding-top: 10px;
+  }
+
+}

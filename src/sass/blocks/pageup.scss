@@ -1,0 +1,57 @@
+.pageup {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 3px;
+
+  z-index: 4;
+  opacity: 0;
+}
+
+.pageup__icon {
+  fill: #0d3f57;
+  transition: 0.4s linear;
+
+  &:hover {
+    fill: $hover-color;
+  }
+
+  &:active {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 900px) {
+  .pageup {
+    bottom: 50px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pageup {
+    bottom: 45px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .pageup {
+    bottom: 40px;
+    right: 30px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .pageup__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+}

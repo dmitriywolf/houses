@@ -1,0 +1,26 @@
+.address {
+  position: relative;
+  min-height: 540px;
+}
+
+@media (max-width: 1024px) {
+  .address {
+    min-height: 460px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .address {
+    min-height: 350px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

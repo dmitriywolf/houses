@@ -1,0 +1,59 @@
+.timetable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 44px;
+  text-align: right;
+  background-image: url("../img/icons/icon-clock.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.timetable__time,
+.timetable__day {
+  font-size: 12px;
+  line-height: 1.58;
+}
+
+.timetable__time {
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .timetable {
+    padding-right: 30px;
+  }
+
+  .timetable__time,
+  .timetable__day {
+    line-height: 1.4;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .timetable {
+    padding-right: 23px;
+  }
+
+  .timetable__day {
+    display: none;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .timetable {
+    padding: 0;
+    background: none;
+  }
+
+
+}
+
+@media (max-width: 420px) {
+  .timetable {
+    display: none;
+  }
+
+}

@@ -1,0 +1,280 @@
+.design__wrapper {
+  background: url("../img/bg-leaves.png") no-repeat center top,
+  url("../img/bg-design.jpg") no-repeat bottom center #e8f3fa;
+}
+
+.design__wrapper {
+  .section__title {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+}
+
+.design__title {
+  padding-bottom: 58px;
+  font-size: 18px;
+  text-align: center;
+}
+
+//.design__list-wrapper {
+//  position: relative;
+//}
+
+.design__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.design__form-wrapper {
+  padding: 65px 100px 70px;
+
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.design__form-title {
+  font-size: 22px;
+  font-weight: 700;
+
+  text-align: left;
+}
+
+.design__form-text {
+  padding: 36px 0 46px;
+}
+
+.design__form {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+
+  .design__label,
+  .design__button {
+    width: 31.03%;
+  }
+
+  .design__input {
+    line-height: 4.46;
+  }
+}
+
+.design__item {
+  position: relative;
+  //width: 31.62%;
+  //padding: 0 10px;
+  display: block;
+  margin: 0 10px;
+  border-radius: 3px;
+  overflow: hidden;
+
+  img {
+    display: block;
+  }
+}
+
+.design__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 177, 0, 0.6);
+
+  img {
+    display: block;
+  }
+
+  opacity: 0;
+  transition: 0.4s linear;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .design__title {
+    padding-bottom: 50px;
+    font-size: 17px;
+  }
+
+  .design__list {
+    margin-bottom: 50px;
+  }
+
+  .design__arrow {
+    top: calc(50% - 15px);
+
+    width: 30px;
+    height: 30px;
+  }
+
+  .design__form-wrapper {
+    padding: 50px 40px 60px;
+  }
+
+  .design__form-title {
+    font-size: 20px;
+  }
+
+  .design__form-text {
+    padding: 30px 0 40px;
+  }
+
+  .design__form {
+    padding-right: 40px;
+
+    .design__label,
+    .design__button {
+      width: 31.03%;
+    }
+
+    .design__input {
+      line-height: 4.3;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .design__wrapper {
+    background: #e8f3fa;
+  }
+
+  .design__title {
+    padding-bottom: 40px;
+    font-size: 16px;
+  }
+
+  .design__list {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .design__item {
+    width: 49%;
+  }
+
+  .design__form-wrapper {
+    padding: 35px 35px 40px;
+  }
+
+  .design__form-title {
+    font-size: 17px;
+  }
+
+  .design__form-text {
+    padding: 25px 0 30px;
+  }
+
+  .design__form {
+    padding-right: 0;
+
+    .design__label,
+    .design__button {
+      width: 31.03%;
+    }
+
+    .design__input {
+      line-height: 3.6;
+    }
+
+    .design__button {
+      font-size: 12px;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .design__title {
+    padding-bottom: 35px;
+    font-size: 15px;
+  }
+
+  .design__list {
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  .design__item {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .design__arrow {
+    background-color: transparent;
+  }
+
+  .design__form-wrapper {
+    padding: 25px 20px 30px;
+  }
+
+  .design__form-title {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .design__form-text {
+    padding: 15px 0 20px;
+    text-align: center;
+  }
+
+  .design__form {
+    flex-wrap: wrap;
+    padding-right: 0;
+
+    .design__label {
+      width: 49%;
+      margin-bottom: 15px;
+    }
+
+    .design__button {
+      width: 49%;
+      margin: 0 auto;
+      height: 45px;
+    }
+  }
+
+}
+
+@media (max-width: 420px) {
+  .design__title {
+    padding-bottom: 25px;
+    font-size: 15px;
+  }
+
+  .design__list {
+    margin-bottom: 25px;
+  }
+
+
+  .design__form-wrapper {
+    padding: 20px 10px 25px;
+  }
+
+  .design__form-text {
+    padding: 20px 0;
+  }
+
+  .design__form {
+    .design__label {
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto 15px;
+    }
+
+    .design__button {
+      width: 100%;
+      max-width: 340px;
+    }
+  }
+
+}

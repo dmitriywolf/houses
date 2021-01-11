@@ -1,0 +1,20 @@
+.form__input {
+  width: 100%;
+  padding: 0 12px;
+  font-size: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.5);
+  outline: none;
+
+  &:focus {
+    border-color: $theme-color;
+  }
+}
+
+.status {
+  padding: 10px 0 0;
+  font-size: 14px;
+  color: #ea1414;
+  text-align: center;
+}

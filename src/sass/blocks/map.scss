@@ -1,0 +1,47 @@
+.map {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .map {
+    right: 40%;
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .map {
+    right: 45%;
+    width: 55%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .map {
+    position: static;
+    order: 2;
+    width: 100%;
+    height: 300px;
+
+    iframe {
+      display: block;
+    }
+  }
+
+}
+
+@media (max-width: 420px) {
+  .map {
+    height: 270px;
+  }
+
+}

@@ -1,0 +1,43 @@
+.material__img img {
+  display: block;
+}
+
+.material__title {
+  padding: 25px 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.material__link {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: 0.4s;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@media (max-width: 1024px) {
+  .material__title {
+    padding: 20px 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .material__title {
+    padding: 15px 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .material__title {
+    padding: 12px 0;
+  }
+
+}

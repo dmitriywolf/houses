@@ -1,0 +1,140 @@
+.info__wrapper {
+  background: url("../img/bg-leaves.png") no-repeat 30% 0, url("../img/bg-info.jpg") no-repeat center center #e8f3fa;
+
+  .section__title {
+    max-width: 665px;
+    margin: 0 auto;
+  }
+}
+
+.info__list {
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.info__item {
+  display: flex;
+  margin: 20px 0;
+}
+
+.info__img {
+  min-width: 170px;
+  margin-right: 30px;
+
+  img {
+    display: block;
+  }
+}
+
+.info__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.info__text {
+  padding-bottom: 25px;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .info__wrapper {
+    background: #e8f3fa url("../img/bg-leaves.png") no-repeat 10% 0;
+  }
+
+  .info__item {
+    margin: 18px 0;
+  }
+
+  .info__img {
+    min-width: 160px;
+    margin-right: 25px;
+
+    img {
+      width: 160px;
+    }
+  }
+
+  .info__text {
+    padding-bottom: 18px;
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .info__wrapper {
+    background: #e8f3fa;
+  }
+
+  .info__item {
+    margin: 15px 0;
+  }
+
+  .info__img {
+    min-width: 140px;
+    margin-right: 15px;
+
+    img {
+      width: 140px;
+    }
+  }
+
+  .info__text {
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .info__img {
+    min-width: 120px;
+    margin-right: 10px;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  .info__text {
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .info__item {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .info__img {
+    min-width: 120px;
+    margin-right: 10px;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  .info__content {
+    align-items: center;
+
+  }
+
+  .info__text {
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .info__subtext {
+    text-align: center;
+  }
+
+}

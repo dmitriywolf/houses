@@ -1,0 +1,74 @@
+.about-us__list {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 500px;
+}
+
+.about-us__item {
+  max-width: 100px;
+
+  p {
+    font-weight: 500;
+
+    span {
+      padding-top: 8px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-us__list {
+    max-width: 400px;
+  }
+
+  .about-us__item {
+    p {
+      font-size: 13px;
+
+      span {
+        font-size: 11px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .about-us__list {
+    max-width: 300px;
+  }
+
+  .about-us__item {
+    p {
+      font-size: 12px;
+
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .about-us__list {
+    flex-direction: column;
+  }
+
+  .about-us__item {
+    max-width: 100%;
+    padding: 5px 0;
+
+    p {
+      font-size: 12px;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+}

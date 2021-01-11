@@ -1,0 +1,50 @@
+.cv {
+  position: relative;
+  padding: 25px 30px 5px;
+  background-color: #ffffff;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 15px);
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #ffffff;
+  }
+
+}
+
+.cv__text {
+  padding-bottom: 18px;
+}
+
+@media (max-width: 1024px) {
+  .cv {
+    padding: 20px 20px 5px;
+  }
+
+  .cv__text {
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv {
+    padding: 15px 15px 5px;
+
+    &::before {
+      left: calc(50% - 10px);
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .cv__text {
+    padding-bottom: 10px;
+  }
+
+}

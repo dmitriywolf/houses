@@ -1,0 +1,47 @@
+/*Library*/
+/*--------------------------------------------*/
+/*LightBox2*/
+@import "../../node_modules/lightbox2/dist/css/lightbox.min.css";
+/*Slick*/
+@import "../../node_modules/slick-carousel/slick/slick.css";
+/*Main Styles*/
+/*Global*/
+@import "global/fonts";
+@import "global/variables";
+@import "global/animate";
+@import "global/main";
+@import "global/container";
+//Переопределение стилей для галереи Lightbox2
+@import "global/lightbox";
+/*Blocks*/
+@import "blocks/button";
+@import "blocks/form";
+@import "blocks/section";
+@import "blocks/slider";
+@import "blocks/pageup";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/timetable";
+@import "blocks/phone";
+@import "blocks/intro";
+@import "blocks/about-us";
+@import "blocks/projects";
+@import "blocks/projects-nav";
+@import "blocks/project";
+@import "blocks/design";
+@import "blocks/materials";
+@import "blocks/material";
+@import "blocks/info";
+@import "blocks/employee";
+@import "blocks/staff";
+@import "blocks/cv";
+@import "blocks/asks";
+@import "blocks/answer";
+@import "blocks/consultation";
+@import "blocks/address";
+@import "blocks/map";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/popup";
+
+

@@ -1,0 +1,22 @@
+.projects__list {
+  visibility: hidden;
+  height: 0;
+
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects__list.active {
+  visibility: visible;
+  height: auto;
+}
+
+@media (max-width: 420px) {
+  .projects__list {
+    justify-content: center;
+  }
+
+}
