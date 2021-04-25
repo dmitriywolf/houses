@@ -9,7 +9,6 @@
 ### 3. JQuery
 	Использована библиотека jQuery.
 
-### 4. Плагины:
-	
-1. Слайдер: Slick Slider
-2. Галерея: Lightbox
+### 4. Плагины:	
+	1. Слайдер: Slick Slider
+	2. Галерея: Lightbox
