@@ -1,8 +1,5 @@
 # Houses
-- Вёрстка Landing Page: [Дома Навека](https://dmitriywolf.github.io/houses/dist/index.html)
-
 ## Описание
-
 ### 1. SASS
 	Стили написаны на препроцессоре Sass(SCSS).
 
@@ -14,6 +11,5 @@
 
 ### 4. Плагины:
 	
-1. Слайдер: [Slick Slider](https://kenwheeler.github.io/slick/)
-
-2. Галерея: [Lightbox](https://lokeshdhakar.com/projects/lightbox2/)
+1. Слайдер: Slick Slider
+2. Галерея: Lightbox

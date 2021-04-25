@@ -1,7 +1,7 @@
 {
   "name": "house",
   "version": "1.0.0",
-  "description": "- Вёрстка Landing Page",
+  "description": "Landing Page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/dmitriywolf/house.git"
   },
-  "author": "Volchenko Dmitriy",
+  "author": "Volchenko D. (dmitriy-dev@ukr.net)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dmitriywolf/house/issues"
