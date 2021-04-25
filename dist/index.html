@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169193161-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169193161-1');
+    </script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Дома на века</title>
+</head>
+<body>
+<div class="sprite" style="display: none">
+    <svg>
+        <symbol id="icon-play" viewBox="0 0 30 30">
+            <g>
+                <path d="M.474,15A14.781,14.781,0,0,1,15-.023,14.781,14.781,0,0,1,29.525,15,14.779,14.779,0,0,1,15,30.024,14.779,14.779,0,0,1,.474,15ZM2.9,15A12.31,12.31,0,0,0,15,27.516,12.309,12.309,0,0,0,27.1,15,12.315,12.315,0,0,0,15,2.484,12.317,12.317,0,0,0,2.9,15ZM13,20.223a.752.752,0,0,1-.4-.67V10.483a.754.754,0,0,1,.4-.669.707.707,0,0,1,.758.062l6.032,4.536a.753.753,0,0,1,.3.607.763.763,0,0,1-.3.608l-6.032,4.532a.7.7,0,0,1-.758.065Z"/>
+            </g>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 48 48">
+            <path d="M28.782,24.144,47.812,5.379a2.954,2.954,0,0,0,0-4.22,3.055,3.055,0,0,0-4.279,0L24.5,19.924,5.473,1.159a3.055,3.055,0,0,0-4.279,0,2.954,2.954,0,0,0,0,4.22l19.03,18.765L1.194,42.91a2.954,2.954,0,0,0,0,4.22,3.055,3.055,0,0,0,4.279,0L24.5,28.364,43.532,47.129a3.055,3.055,0,0,0,4.279,0,2.954,2.954,0,0,0,0-4.22Z"/>
+        </symbol>
+    </svg>
+</div> <!--/.sprite-->
+
+<header class="header fixed" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo logo">
+                <img class="logo__img" src="img/Logotype.png" width="80" height="50" alt="Логотип">
+                <a href="#" class="logo__text"><span>дома</span>навека</a>
+            </div> <!--/.header__logo /.logo-->
+
+            <div class="header__timetable timetable">
+                <div class="timetable__time">с 9:00 до 21:00</div>
+                <div class="timetable__day">без выходных</div>
+            </div> <!--/.header__timetable /.timetable-->
+
+            <div class="header__phone phone">
+                <p class="phone__text">Есть вопросы? Звоните!</p>
+                <a class="phone__link" href="tel:+7495204237*">+7 (495) 204-23-76</a>
+            </div> <!--/.header__phone /.phone-->
+
+            <button class="header__button button" type="button">Заказать звонок</button> <!--/.header__button-->
+        </div> <!--/.header__inner-->
+    </div><!--/.container-->
+</header> <!--/.header-->
+
+<main>
+    <!--Intro-->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Строим Дома</h1>
+                <h2 class="intro__subtitle">из бетона, кирпича, поризованных блоков и пеноблоков</h2>
+
+                <p class="intro__text">в Москве и МО с гарантией 20 лет</p>
+
+                <ul class="intro__list about-us about-us__list">
+                    <li class="about-us__item"><p>У нас 7 бригад строителей</p></li> <!--/.about-us__item-->
+                    <li class="about-us__item"><p>Опыт работы 19 лет</p></li> <!--/.about-us__item-->
+                    <li class="about-us__item"><p>Создаем дома "под ключ"<span>, реконструируем или достраиваем</span>
+                    </p>
+                    </li> <!--/.about-us__item-->
+                </ul> <!--/.intro__list-->
+
+                <div class="intro__form-wrapper">
+                    <h3 class="intro__form-title">Бесплатно составим смету на строительство вашего дома уже
+                        сегодня!</h3>
+                    <form class="intro__form form" action="#" method="post">
+                        <label class="intro__label form__label">
+                            <input class="intro__input form__input" name="userName" type="text" placeholder="Ваше имя"
+                                   required>
+                        </label>
+                        <label class="intro__label form__label">
+                            <input class="intro__input form__input" name="userPhone" type="tel"
+                                   placeholder="Ваш телефон" required>
+                        </label>
+                        <button class="intro__button form__button button" type="submit">Заказать смету</button>
+                    </form> <!--/.intro__form-->
+                </div> <!--/.intro__form-wrapper-->
+
+            </div> <!--/.intro__inner-->
+        </div> <!--/.container-->
+    </div><!--/.intro-->
+
+    <!--Projects-->
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title">У нас есть уже готовые проекты</h2>
+
+            <div class="projects">
+
+                <div class="projects-nav">
+                    <div class="projects-nav__item tab-nav active">Эконом</div>
+                    <div class="projects-nav__item tab-nav">Средний</div>
+                    <div class="projects-nav__item tab-nav">Премиум</div>
+                </div> <!--/.projects-nav-->
+                <div class="projects__inner">
+                    <!--Эконом-->
+                    <div class="projects__list projects__slider tab-content active">
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/eco-1.jpg" alt="Эконом" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 1</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 152 м<sup>2</sup></p>
+                                        <p>Размеры: 8х19х5</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/eco-2.jpg" alt="Эконом" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 2</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 96 м<sup>2</sup></p>
+                                        <p>Размеры: 8х12х3</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/eco-3.jpg" alt="Эконом" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 3</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 176 м<sup>2</sup></p>
+                                        <p>Размеры: 8х22х4</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/eco-2.jpg" alt="Эконом" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 3</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 176 м<sup>2</sup></p>
+                                        <p>Размеры: 8х22х4</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                    </div>  <!--/.projects__list /.project-->
+
+                    <!--Средний-->
+                    <div class="projects__list projects__slider tab-content">
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/middle-1.jpg" alt="Средний" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 1</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 225 м<sup>2</sup></p>
+                                        <p>Размеры: 15х17х5</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/middle-2.jpg" alt="Средний" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 2</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 216 м<sup>2</sup></p>
+                                        <p>Размеры: 12х18х4</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/middle-3.jpg" alt="Средний" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 3</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 400м<sup>2</sup></p>
+                                        <p>Размеры: 25х16х6</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/middle-2.jpg" alt="Средний" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 3</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 400м<sup>2</sup></p>
+                                        <p>Размеры: 25х16х6</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                    </div>  <!--/.projects__list /.project-->
+
+                    <!--Премиум-->
+                    <div class="projects__list projects__slider tab-content">
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/premium-1.jpg" alt="Премиум" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 1</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 340 м<sup>2</sup></p>
+                                        <p>Размеры: 20х17х5</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/premium-2.jpg" alt="Премиум" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 2</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 252 м<sup>2</sup></p>
+                                        <p>Размеры: 14х18х8</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/premium-3.jpg" alt="Премиум" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 3</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 550м<sup>2</sup></p>
+                                        <p>Размеры: 25х22х6</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                        <div>
+                            <div class="project__item">
+                                <div class="project__img">
+                                    <img src="img/projects/premium-2.jpg" alt="Премиум" width="370" height="240">
+                                </div>
+                                <div class="project__content">
+                                    <h3 class="project__title">Проект Дома Навека 2</h3>
+                                    <div class="project__desc">
+                                        <p>Площадь: 252 м<sup>2</sup></p>
+                                        <p>Размеры: 14х18х8</p>
+                                    </div>
+                                    <button class="project__button button" type="button">Подробнее о проекте
+                                    </button>
+                                </div> <!--/.project__content-->
+                            </div> <!--/.project__item-->
+                        </div>
+                    </div> <!--/.projects__list-->
+
+                </div> <!--/.projects__inner-->
+
+            </div> <!--/.projects-->
+        </div> <!--/.container-->
+    </section> <!--/.section-->
+
+    <!--Design-->
+    <section class="section design__wrapper">
+        <div class="container">
+            <h2 class="section__title">Мы построим Вам дом по индивидуальному плану
+                разработанному в нашем проектном бюро</h2>
+
+            <div class="design">
+
+                <div class="design__inner">
+                    <h2 class="design__title">За 19 лет мы разработали более 500 индивидуальных проектов</h2>
+
+                    <div class="design__list">
+
+                        <div class="design__item">
+                            <a class="design__img">
+                                <img src="img/design/design-1.jpg" alt="design-1" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-1@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-2.jpg" alt="design-2" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-2@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50"></a>
+                        </div> <!--/.design__item-->
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-3.jpg" alt="design-3" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-3@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-2.jpg" alt="design-2" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-2@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                    </div> <!--/.design__list-->
+
+                </div>  <!--/.design__inner-->
+
+                <div class="design__inner">
+                    <h2 class="design__title">Мы разрабатываем оригинальные,конструктивно сложные проекты и реализуем
+                        их</h2>
+
+                    <div class="design__list">
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-4.jpg" alt="design-4" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-4@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-5.jpg" alt="design-5" width="370" height="245"></a>
+                            <a class="design__mask" href="img/design/design-5@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-6.jpg" alt="design-6" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-6@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                        <div class="design__item">
+                            <a class="design__img" href="#">
+                                <img src="img/design/design-5.jpg" alt="design-5" width="370" height="245">
+                            </a>
+                            <a class="design__mask" href="img/design/design-5@2x.jpg" data-lightbox="design">
+                                <img src="img/plus.png" alt="" width="50" height="50">
+                            </a>
+                        </div> <!--/.design__item-->
+
+                    </div> <!--/.design__list-->
+
+                </div> <!--/.design__inner-->
+
+                <div class="design__form-wrapper">
+                    <h3 class="design__form-title">Мы готовы разработать для Вас индивидуальный проект дома по Вашим
+                        пожеланиям
+                        Либо использовать для строительства Ваш собственный проект</h3>
+                    <p class="design__form-text">Заполните форму ниже - мы свяжемся с Вами для обсуждения деталей
+                        проекта</p>
+                    <form class="design__form form" action="#">
+                        <label class="design__label form__label">
+                            <input class="design__input form__input" name="userName" type="text" placeholder="Ваше Имя"
+                                   required>
+                        </label>
+                        <label class="design__label form__label">
+                            <input class="design__input form__input" name="userPhone" type="tel"
+                                   placeholder="Ваш телефон" required>
+                        </label>
+                        <button class="design__button form__button button" type="submit">Заказать<br> обратный звонок
+                        </button>
+                    </form> <!--/.design__form-->
+                </div> <!--/.design__form-wrapper-->
+            </div> <!--/.design-->
+        </div> <!--/.container-->
+    </section> <!--/.section /.design__wrapper-->
+
+    <!--Materials-->
+    <section class="section materials__wrapper">
+        <div class="container">
+            <h2 class="section__title">Мы построим для Вас дом из выбранного Вами материала</h2>
+
+            <div class="materials__list">
+                <div class="materials__item material">
+                    <div class="material__img">
+                        <img src="img/materials/material-1.png" alt="Бетон" width="270" height="190">
+                    </div>
+                    <h3 class="material__title">Из бетона</h3>
+                    <a href="" class="material__link">Подробнее</a>
+                </div> <!--/.materials__item-->
+                <div class="materials__item material">
+                    <div class="material__img"><img src="img/materials/material-2.png" alt="Из кирпича" width="270"
+                                                    height="190"></div>
+                    <h3 class="material__title">Из кирпича</h3>
+                    <a href="" class="material__link">Подробнее</a>
+                </div> <!--/.materials__item-->
+                <div class="materials__item material">
+                    <div class="material__img"><img src="img/materials/material-3.png" alt="Поризованные блоки"
+                                                    width="270" height="190"></div>
+                    <h3 class="material__title">Из поризованных блоков</h3>
+                    <a href="" class="material__link">Подробнее</a>
+                </div> <!--/.materials__item-->
+                <div class="materials__item material">
+                    <div class="material__img"><img src="img/materials/material-4.png" alt="Пеноблоки" width="270"
+                                                    height="190"></div>
+                    <h3 class="material__title">Пеноблоков</h3>
+                    <a href="" class="material__link">Подробнее</a>
+                </div> <!--/.materials__item-->
+            </div> <!--/.materials__list-->
+
+
+        </div> <!--/.container-->
+    </section> <!--/.section /.materials-->
+
+    <!--Info-->
+    <section class="section info__wrapper">
+        <div class="container">
+            <h2 class="section__title">Мы всегда укладываемся в сроки прописанные в договоре на строительство</h2>
+            <div class="info">
+                <ul class="info__list">
+                    <li class="info__item">
+                        <div class="info__img">
+                            <img src="img/info/info-item-1.png" alt="Info-1" width="170" height="120">
+                        </div>
+                        <div class="info__content">
+                            <p class="info__text">Мы используем современную технику и инструмент при производстве
+                                работ</p>
+                            <p class="info__subtext">Это в разы сокращает сроки строительства</p>
+                        </div>
+                    </li> <!--/.info__item-->
+                    <li class="info__item">
+                        <div class="info__img">
+                            <img src="img/info/info-item-2.png" alt="Info-2" width="170" height="120">
+                        </div>
+                        <div class="info__content">
+                            <p class="info__text">У нас в штате 7 бригад опытных специалистов<br> своего дела</p>
+                            <p class="info__subtext">Мы имеем конкурентное преимущество в качестве выполняемых работ</p>
+                        </div>
+                    </li> <!--/.info__item-->
+                    <li class="info__item">
+                        <div class="info__img">
+                            <img src="img/info/info-item-3.png" alt="Info-3" width="170" height="120">
+                        </div>
+                        <div class="info__content">
+                            <p class="info__text">Отдел технического контроля нашей компании
+                                проверяет каждый этап строительства</p>
+                            <p class="info__subtext">Это позволяет исключить производственный брак на каждом этапе
+                                строительства</p>
+                        </div>
+                    </li> <!--/.info__item-->
+                </ul> <!--/.info__list-->
+            </div> <!--/.info-->
+        </div> <!--/.container-->
+    </section> <!--/.section /.info__wrapper-->
+
+    <!--Employees-->
+    <section class="section">
+        <div class="container">
+            <div class="employee">
+                <h2 class="section__title">
+                    Все сотрудники в нашем штате имеют высшее инженерно-строительное образование
+                </h2>
+                <div class="employee__inner">
+                    <div class="employee__img-wrapper">
+                        <img class="employee__img" src="img/employee.jpg" alt="Екатерина Волкова" width="470"
+                             height="301">
+                        <div class="employee__mask"></div>
+                        <svg class="employee__play" width="30" height="30">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                    <div class="employee__description">
+                        <h3 class="employee__name">Екатерина Волкова</h3>
+                        <p class="employee__position">Генеральный директор ООО "Дома Навека"</p>
+                        <div class="employee__contacts">
+                            <p>Вы можете напрямую связаться с директором по телефону:</p>
+                            <a class="employee__link" href="tel:+7495204237*">+7 (495) 204-23-76</a>
+                        </div>
+                    </div> <!--/.employee__description-->
+                </div> <!--/.employee__inner-->
+            </div> <!--/.employee-->
+        </div> <!--/.container-->
+    </section> <!--/.section-->
+
+    <!--Staff-->
+    <section class="section staff__wrapper">
+        <div class="container">
+            <h2 class="section__title">Ключевые лица нашей компании</h2>
+            <div class="staff">
+                <ul class="staff__list">
+
+                    <li class="staff__item">
+                        <div class="staff__item__img-wrapper">
+                            <img src="img/staff-item.png" alt="Сотрудник" width="148" height="170">
+                        </div>
+                        <h3 class="staff__name">Валентина Никитина</h3>
+                        <p class="staff__position">Бухгалтер</p>
+                        <div class="cv">
+                            <p class="cv__text">Образование - БГТУ</p>
+                            <p class="cv__text">Стаж с 2004 года.</p>
+                            <p class="cv__text">Принимал участие в проектировании и монтаже более 200 объектов в России
+                                и за рубежом. </p>
+                            <p class="cv__text">Внештатный консультант пяти действующих строительных компаний Москвы</p>
+                        </div> <!--/.cv-->
+                    </li> <!--/.staff__item-->
+
+                    <li class="staff__item">
+                        <div class="staff__img-wrapper">
+                            <img src="img/staff-item.png" alt="Сотрудник" width="148" height="170">
+                        </div>
+                        <h3 class="staff__name">Екатерина Николаева</h3>
+                        <p class="staff__position">Архитектор</p>
+                        <div class="cv">
+                            <p class="cv__text">Образование - БГТУ</p>
+                            <p class="cv__text">Стаж с 2004 года.</p>
+                            <p class="cv__text">Принимал участие в проектировании и монтаже более 200 объектов в России
+                                и за рубежом. </p>
+                            <p class="cv__text">Внештатный консультант пяти действующих строительных компаний Москвы</p>
+                        </div> <!--/.cv-->
+                    </li> <!--/.staff__item-->
+
+                    <li class="staff__item">
+                        <div class="staff__img-wrapper">
+                            <img src="img/staff-item.png" alt="Сотрудник" width="148" height="170">
+                        </div>
+                        <h3 class="staff__name">Виктория Купер</h3>
+                        <p class="staff__position">Инженер</p>
+                        <div class="cv">
+                            <p class="cv__text">Образование - БГТУ</p>
+                            <p class="cv__text">Стаж с 2004 года.</p>
+                            <p class="cv__text">Принимал участие в проектировании и монтаже более 200 объектов в России
+                                и за рубежом. </p>
+                            <p class="cv__text">Внештатный консультант пяти действующих строительных компаний Москвы</p>
+                        </div> <!--/.cv-->
+                    </li> <!--/.staff__item-->
+
+                </ul> <!--/.staff__list-->
+            </div> <!--/.staff-->
+        </div> <!--/.container-->
+    </section> <!--/.section /.staff__wrapper-->
+
+    <!--Asks-->
+    <section class="section asks__wrapper">
+        <div class="container">
+            <h2 class="section__title">Часто задаваемые вопросы</h2>
+            <div class="asks">
+                <h3 class="asks__subtitle">На Ваши вопросы ответит Евтушенко Дмитрий</h3>
+
+                <div class="asks__list-wrapper">
+                    <ol class="asks__list">
+                        <li class="asks__item"><a>Как заказать проект?</a>
+                            <div class="asks__answer answer">
+                                <button class="answer__close">
+                                    <svg class="answer__close-icon" width="10" height="10">
+                                        <use xlink:href="#icon-close"></use>
+                                    </svg>
+                                </button> <!--/.answer__close-->
+                                <p class="answer__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                    doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                    voluptate.
+                                </p>
+                            </div> <!--/.answer-->
+                        </li>
+                        <li class="asks__item"><a>Что делать, если проект не подходит?</a>
+                            <div class="asks__answer answer">
+                                <button class="answer__close">
+                                    <svg class="answer__close-icon" width="10" height="10">
+                                        <use xlink:href="#icon-close"></use>
+                                    </svg>
+                                </button> <!--/.answer__close-->
+                                <p class="answer__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                    doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                    voluptate.
+                                </p>
+                            </div> <!--/.answer-->
+                        </li>
+                        <li class="asks__item"><a>Как долго составляется проект?</a>
+                            <div class="asks__answer answer">
+                                <button class="answer__close">
+                                    <svg class="answer__close-icon" width="10" height="10">
+                                        <use xlink:href="#icon-close"></use>
+                                    </svg>
+                                </button> <!--/.answer__close-->
+                                <p class="answer__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                    doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                    voluptate.
+                                </p>
+                            </div> <!--/.answer--></li>
+                        <li class="asks__item"><a>Как долго происходит подготовка документации?</a>
+                            <div class="asks__answer answer">
+                                <button class="answer__close">
+                                    <svg class="answer__close-icon" width="10" height="10">
+                                        <use xlink:href="#icon-close"></use>
+                                    </svg>
+                                </button> <!--/.answer__close-->
+                                <p class="answer__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                    doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                    voluptate.
+                                </p>
+                            </div> <!--/.answer--></li>
+                        <li class="asks__item"><a>Можно ли оформить рассрочку?</a>
+                            <div class="asks__answer answer">
+                                <button class="answer__close">
+                                    <svg class="answer__close-icon" width="10" height="10">
+                                        <use xlink:href="#icon-close"></use>
+                                    </svg>
+                                </button> <!--/.answer__close-->
+                                <p class="answer__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                    doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                    voluptate.
+                                </p>
+                            </div> <!--/.answer--></li>
+                        <li class="asks__item"><a>Как долго происходит строительство?</a>
+                            <div class="asks__answer answer">
+                                <button class="answer__close">
+                                    <svg class="answer__close-icon" width="10" height="10">
+                                        <use xlink:href="#icon-close"></use>
+                                    </svg>
+                                </button> <!--/.answer__close-->
+                                <p class="answer__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                    doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                    voluptate.
+                                </p>
+                            </div> <!--/.answer--></li>
+                        <li class="asks__item"><a>Когда происходит ввод в эксплуатацию?</a>
+                            <div class="asks__answer answer">
+                                <button class="answer__close">
+                                    <svg class="answer__close-icon" width="10" height="10">
+                                        <use xlink:href="#icon-close"></use>
+                                    </svg>
+                                </button> <!--/.answer__close-->
+                                <p class="answer__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores
+                                    doloremque ipsam voluptatem. Dolores ex facere in iste, molestiae quam quisquam
+                                    voluptate.
+                                </p>
+                            </div> <!--/.answer--></li>
+                    </ol> <!--/.asks__list-->
+                </div> <!--/.asks__list-wrapper-->
+
+            </div> <!--/.asks-->
+        </div> <!--/.container-->
+    </section> <!--/.section /.asks__section-->
+
+    <!--Consultation-->
+    <section class="consultation">
+        <div class="container">
+            <div class="consultation__inner">
+                <h3 class="consultation__title">Вы не нашли ответа на свой вопрос? Наши специалисты дадут Вам
+                    профессиональную консультацию абсолютно бесплатно!</h3>
+                <p class="consultation-text">Заполните форму ниже - мы свяжемся с Вами для обсуждения деталей
+                    проекта</p>
+
+                <form class="consultation__form form" action="#">
+                    <label class="consultation__label form__label">
+                        <input class="consultation__input form__input" name="userName" type="text"
+                               placeholder="Ваше Имя" required>
+                    </label>
+                    <label class="consultation__label form__label">
+                        <input class="consultation__input form__input" name="userPhone" type="tel"
+                               placeholder="Ваш телефон" required>
+                    </label>
+                    <button class="consultation__button form__button button" type="submit">Получить бесплатную<br>консультацию
+                    </button>
+                </form> <!--/.consultation__form-->
+                <p class="consultation__phone">Или Вы можете перезвонить нам сами по телефону: <a
+                        href="tel:+7495204237*">+7 (495) 204-23-76</a></p>
+
+            </div> <!--/.consultation__inner-->
+        </div> <!--/.container-->
+    </section> <!--/.consultation-->
+
+    <!--Address-->
+    <section class="address">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25451.049703612865!2d37.40292123405816!3d55.67896895075884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54e73da369551%3A0x97fda1935d19c435!2z0JzQmtCQ0JQgNTEg0LrQvCAo0LLQvdC10YjQvS4pLCDQnNC-0YHQutCy0LAsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sua!4v1588232104366!5m2!1sru!2sua"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+        </div>
+        <div class="contacts">
+            <h2 class="contacts__title">Мы можем показать Вам еще больше проектов у нас в офисе!</h2>
+            <h3 class="contacts__subtitle">Приезжайте к нам в гости по адресу:</h3>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <div class="contacts__img">
+                        <img src="img/icons/icon-map.png" alt="Icon-map" width="15" height="20">
+                    </div>
+                    <div class="contacts__text">
+                        МКАД 51 км. ТВК<br>
+                        "Элит Строй Материалы"
+                        павильон L23
+                    </div>
+                </li> <!--/.contacts__item-->
+                <li class="contacts__item">
+                    <div class="contacts__img">
+                        <img src="img/icons/icon-tel.png" alt="Icon-tel" width="20" height="20">
+                    </div>
+                    <div class="contacts__text">
+                        <p>Звоните прямо сейчас:</p>
+                        <a class="contacts__tel" href="tel:+7495204237*">+7 (495) 204-23-76</a>
+                    </div>
+                </li>  <!--/.contacts__item-->
+                <li class="contacts__item ">
+                    <div class="contacts__img">
+                        <img src="img/icons/icon-clock.png" alt="Icon-clock" width="18" height="18">
+                    </div>
+                    <div class="contacts__text">
+                        с 9:00 до 21:00 <br>
+                        без выходных
+                    </div>
+                </li> <!--/.contacts__item-->
+            </ul> <!--/.contacts__list-->
+        </div> <!--/.contacts-->
+    </section> <!--/.address-->
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__logo logo">
+            <img class="logo__img" src="img/Logotype.png" width="80" height="50" alt="Логотип">
+            <a href="#" class="logo__text"><span>дома</span>навека</a>
+        </div> <!--/.footer__logo /.logo-->
+    </div> <!--/.container-->
+</footer> <!--/.footer-->
+
+<!--Modal CallBack-->
+<div class="popup popup--callback">
+    <div class="popup__inner animated bounceIn">
+        <button class="popup__close">
+            <svg class="popup__close-icon" width="14" height="14">
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </button> <!--/.popup__close-->
+
+        <h3 class="popup__title">Оставьте свой номер и мы свяжемся с Вами</h3>
+        <form class="popup__form form" action="#" method="post">
+            <label class="popup__label form__label">
+                <input class="popup__input form__input" name="userName" type="text" placeholder="Ваше имя"
+                       required>
+            </label>
+            <label class="popup__label form__label">
+                <input class="popup__input form__input" name="userPhone" type="tel"
+                       placeholder="Ваш телефон" required>
+            </label>
+            <button class="popup__button form__button button" type="submit">Перезвоните мне</button>
+        </form> <!--/.intro__form-->
+
+    </div> <!--/.popup__inner-->
+</div> <!--/.popup-->
+
+<!--PageUp-->
+<a class="pageup" href="#intro">
+    <svg class="pageup__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.002 492.002" width="24" height="24">
+        <path d="M484.136,328.473L264.988,109.329c-5.064-5.064-11.816-7.844-19.172-7.844c-7.208,0-13.964,2.78-19.02,7.844
+			L7.852,328.265C2.788,333.333,0,340.089,0,347.297c0,7.208,2.784,13.968,7.852,19.032l16.124,16.124
+			c5.064,5.064,11.824,7.86,19.032,7.86s13.964-2.796,19.032-7.86l183.852-183.852l184.056,184.064
+			c5.064,5.06,11.82,7.852,19.032,7.852c7.208,0,13.96-2.792,19.028-7.852l16.128-16.132
+			C494.624,356.041,494.624,338.965,484.136,328.473z"/>
+    </svg>
+</a> <!--/.pageup-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/lib.min.js"></script>
+<script src="js/index.min.js"></script>
+
+</body>
+</html>

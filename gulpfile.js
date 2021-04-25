@@ -87,7 +87,7 @@ function copyFile() {
     ];
   
     return gulp.src(file)
-        .pipe(gulp.dest(dist))
+        .pipe(gulp.dest('./dist'))
         .pipe(browserSync.reload({stream: true}))
   }
 
